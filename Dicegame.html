@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Dicegame.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class = 'message-container hidden'>
+        <p class="message">  </p>
+    </div> 
+    <main>
+      <div class="dicegame-container">
+        <section class="player-1 player-active player">
+          <div class="player-details">
+            <h1 class="name">Player 1</h1>
+            <p class="score" id="player-0-score">0</p>
+          </div>
+
+          <div class="score-container">
+            <p class="current-label">current</p>
+            <h3 class="current-score" id="current--0">0</h3>
+          </div>
+        </section>
+
+        <div class="button-container">
+          <button class="btn btn-newgame">🔁 new game</button>
+
+          <img class="dice-image" src="" />
+          <div class="bottom-btn">
+            <button class="btn btn-rolldice">🎲 roll dice</button>
+            <button class="btn btn-hold">🙋🏾‍♀️ hold</button>
+          </div>
+        </div>
+
+        <section class="player-2 player">
+          <div class="player-details">
+            <h1 class="name">Player 2</h1>
+            <p class="score" id="player-1-score">0</p>
+          </div>
+
+          <div class="score-container">
+            <p class="current-label">current</p>
+            <h3 class="current-score" id="current--1">0</h3>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./Dicegame.js"></script>
+  </body>
+</html>

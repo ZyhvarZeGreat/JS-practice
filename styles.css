@@ -1,0 +1,162 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background: #40403e;
+    /* background: linear-gradient(to top left, #3e55e5, #4058f5ca); */
+}
+
+h1 {
+    font-family: 'Satoshi';
+    font-size: clamp(3rem, 10vw, 7rem);
+    color: #fff;
+    padding: 0;
+    margin: 1.2rem;
+}
+h3{
+    font-family: 'Satoshi';
+    font-size: clamp(1.8rem, 10vw, 4rem);
+    color: #fff;
+}
+
+input {
+    font-family: 'Satoshi';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    font-size: clamp(1.8rem, 10vw, 4rem);
+    margin: 0;
+}
+p {
+    font-family: 'Satoshi';
+    font-size: clamp(1.2rem, 10vw, 3rem);
+    color: #fff;
+    font-weight: 500;
+}
+
+header {
+    width: 90%;
+    display: flex;
+    /* height: 12rem; */
+    height: 10%;
+    margin-top: 12rem;
+    align-items: center;
+    justify-self: flex-start;
+
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.guess_my_number_header {
+    display: flex;
+    width: 100%;
+    height: 13rem;
+ 
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+.guess_my_number_header button {
+    height: 4rem;
+    width: 12rem;
+    font-family: 'Satoshi';
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: .3rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.guess_my_number_header button:hover {
+
+    opacity: .9;
+
+}
+.message{
+    /* display: none; */
+    margin: 0;
+}
+
+.highscore {
+    color: #fff;
+      font-size: clamp(1.8rem, 10vw, 3rem);
+}
+.guess_my_number_header_info p {
+    font-family: 'Satoshi';
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.guess_my_number_element {
+    height: 6rem;
+    background-color: #fff;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guess_my_number_element h3{
+    color: #40403e;
+}
+.guess_my_number_scores{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    text-align: start;
+}
+.guess_my_number_checker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.guess_my_number_scores button{
+    height: 4rem;
+    width: 12rem;
+    font-family: 'Satoshi';
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    border-radius: .3rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.guess_my_number_scores button:hover{
+
+    opacity: .9;
+
+}
+.guess{
+text-align: center;
+border: none;
+}
+
+.message_container {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ font-size: 20px;
+ /* color: hsla(139, 72%, 41%, 0.881); */
+}
