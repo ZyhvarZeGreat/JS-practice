@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Bankist.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="Bankist_Nav">
+        <h1 class="Bankist_Nav_Welcome">Login to get started</h1>
+      </div>
+
+      <form class="Bankist_Login">
+        
+            <input class="login_input login_input--user" type='text' placeholder='Username'/>
+            <input class="login_input login_input--pin" type='password'  maxlength="4" placeholder='PIN'/>
+       
+            <button type=" submit" class="Bankist_Submit_Button"> &rarr; </button>
+      </form>
+    </nav>
+
+    <main class = 'app'>
+
+        <section class = 'Bankist_User_Info'>
+<div class ='Bankist_User_Details'>
+    <h2>Current Balance</h2>
+    <p class="date"> As of 05/03/2027 </p>
+</div>
+
+<div  class ='Bankist_User_Balance'>
+    <h1 class="balance"> $0000 </h1>
+</div>
+
+
+
+        </section>
+        <section class = 'Bankist_User_Actions'>
+            <div class ='Bankist_Transaction'>
+              <div class ='Bankist_Transaction_Container'>
+
+                
+                  <div class="Bankist_Transaction_Items"> 
+                 <div class ='Bankist_Transaction_Items_Details'>
+                  <div class="Bankist_Transaction_Item_Notification deposit">
+                    <p class="Bankist_Transaction_Item_Notification_Text"> 1 Deposit </p>
+                 </div>
+                 <div class="Bankist_Transaction_Item_Date">
+                  <p> 12/08/2023 </p>  
+                 </div>
+                 </div>
+
+                 <div class="Bankist_Transaction_Items_Amount">
+                  <p class="Bankist_Transaction_Items_Amount_Text"> 2000  </p>
+                 </div>
+                </div>
+                <div class="Bankist_Transaction_Items">
+                  <div class =' Bankist_Transaction_Items_Details'>
+                   <div class="Bankist_Transaction_Item_Notification withdrawal">
+                     <p class="Bankist_Transaction_Item_Notification_Text"> 2 Withdrawal </p>
+                  </div>
+                  <div class="Bankist_Transaction_Item_Date">
+                   <p> 12/08/2023 </p>  
+                  </div>
+                  </div>
+ 
+                  <div class="Bankist_Transaction_Items_Amount">
+                   <p class="Bankist_Transaction_Items_Amount_Text"> $2000  </p>
+                  </div>
+                 </div> 
+
+                 
+              </div>
+
+              <div class="Bankist_Transaction_Balance_Details">
+                <div class="">
+                  <p>IN</p>
+                  <h4 class="balance-in">0000</h4>
+                </div>
+                <div>
+                  <p>OUT</p>
+                  <h4  class="balance-out">0000</h4>
+                </div>
+                <div>
+                  <p>INTEREST</p>
+                  <h4  class="interest">0000</h4>
+                </div>
+      
+                <button class="sort--button" type="submit">
+                  &darr;Sort
+                </button>
+              </div>
+            </div>
+            
+            <div class = 'Bankist_Actions'>
+       <div class = 'Bankist_Action Transfer'>
+        <div class="Transfer_Form_Header">
+            <h2> Transfer Money</h2>
+        </div>
+
+      <div class="Transfer_Form_Container"> 
+
+        
+        <form class = 'Transfer_Form'>
+            <input class="Form_input" id="transfer--to" type = 'text' inputmode="numeric" />
+            <p>Transfer to</p>
+        </form>
+
+        <form class='Transfer_Form'>
+            <input class="Form_input" id="transfer--amount" inputmode="numeric" type = 'text'/>
+            <p> Amount</p>
+        </form>
+        <button class="Form_button" id ='transfer--button' type ='submit'>&rarr; </button>
+    </div>
+       </div>
+       <div class = 'Bankist_Action Loans'>
+        <h1> Request Loan </h1>
+      <form class="Loan_Form">
+        <input class = 'Loan_Form Form_input' id="loan--amount" type="text" inputmode="numeric"/>
+        <button  class = 'Loan_Form Form_button' id="loan--button" type="submit">
+        &rarr;
+        </button>
+      </form>
+      <p> Amount</p>
+       </div>
+       <div class = 'Bankist_Action Cancel'>
+        <h1> Close Account </h1>
+<form class="Cancel_Form_Container">
+<div>  
+  <input class = 'Cancel_Form Form_input' id="cancel--username"  type="text" aria-label="asas"/>
+  <p>Username</p>
+
+</div>
+
+  <div>  
+    <input  class = 'Cancel_Form Form_input' id="cancel--pin" type="password" inputmode="numeric"/>
+    <p>PIN</p>
+  </div>
+    <button  class = 'Cancel_Form Form_button' id="cancel--button" type="submit">
+      &rarr;
+      </button>
+</form>
+       </div>
+   
+            </div>
+
+            
+        </section>
+
+     
+  </body>
+
+  <script src="./Bankist.js"></script>
+</html>

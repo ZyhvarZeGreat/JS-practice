@@ -1,0 +1,383 @@
+body {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    height: 50rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.app{
+    opacity: 0;
+    transition: all 1s;
+}
+nav {
+    height: 7rem;
+}
+
+.Bankist_Nav_Welcome{
+font-size: 1.2rem;
+font-weight: 600;
+}
+.balance-in{
+    color: rgb(83, 223, 3);
+}
+.balance-out{
+    color: rgb(223, 51, 3);
+}
+.Bankist_User_Info {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Satoshi';
+
+}
+
+.Bankist_User_Details {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.Bankist_Transaction_Balance_Details {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.Bankist_User_Balance {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Bankist_User_Info h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.1rem;
+}
+
+.Bankist_User_Info p {
+    margin: 0;
+    padding: 0;
+}
+
+.Bankist_User_Info h2 {
+    font-size: 1.8rem;
+}
+
+.sort--button {
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+    margin-top: .2rem;
+    background-color: transparent;
+    font-family: 'Satoshi';
+    letter-spacing: .9px;
+    font-size: 1rem;
+    border: none;
+}
+
+.Bankist_User_Actions {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: row;
+    width: 90%;
+    font-family: 'Satoshi';
+}
+
+.Bankist_Transaction {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 50%;
+}
+
+
+.Bankist_Transaction_Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .2rem;
+    height: 50rem;
+    background-color: #ffffff;
+    border-radius: 13px;
+    box-shadow: 1px 1.2px 1px 2px rgba(0, 0, 0, 0.09);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.Bankist_Transaction_Container::-webkit-scrollbar {
+    display: none;
+}
+
+.Bankist_Transaction_Items {
+    height: 5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  border-radius: .3rem;
+    width: 95%;
+    border-bottom: solid 1px #e5e5e5;
+    /* box-shadow: 1px 1.2px 0px 1px rgba(0, 0, 0, 0.03); */
+}
+
+.Bankist_Transaction_Items_Details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.Bankist_Transaction_Item_Notification{
+    height: 1.3rem;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: aqua;
+    box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.07);
+}
+.Bankist_Transaction_Item_Notification_Text{
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 600;
+}
+.deposit{
+    background: linear-gradient(to top left ,  hsla(134, 98%, 32%, 0.726), hsla(118, 100%, 51%, 0.901));
+}
+.withdrawal{
+    background: linear-gradient(to top left ,  hsla(0, 91%, 49%, 0.726), hsla(6, 73%, 50%, 0.935));
+}
+.Bankist_Actions {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    justify-content: center;
+    height: 90%;
+}
+
+.Bankist_Action {
+    height: 12rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px
+}
+
+.Transfer {
+    background: linear-gradient(to top left, hsl(50, 94%, 56%), hsla(38, 100%, 52%, 0.663));
+    display: flex;
+    flex-direction: column;
+}
+
+.Transfer_Form_Header {
+    width: 85%;
+}
+
+.Transfer_Form_Container {
+    width: 90%;
+    display: flex;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.Form_button {
+    width: 4rem;
+    height: 2rem;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    margin-bottom: 2rem;
+    justify-self: center;
+
+}
+
+.Transfer_Form {
+    width: 9rem;
+    height: 100%;
+    gap: .6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Transfer_Form p {
+    margin: 0;
+    margin-right: 1em;
+
+}
+
+.Form_input {
+    height: 2rem;
+    width: 6rem;
+    border: none;
+    background-color: #ffffff8e;
+    border-radius: 5px
+}
+
+.Loans {
+    background: linear-gradient(to top left, hsl(126, 94%, 56%), #0cff24a9);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Loan_Form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Loan_Form .Form_input {
+
+    width: 8rem;
+}
+
+.Loan_Form .Form_button {
+    margin: 0;
+    text-align: center;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Loans input,
+.Loans h1,
+.Loans p {
+    margin-left: 3rem;
+}
+
+.Cancel {
+    background: linear-gradient(to top left, hsl(207, 94%, 56%), hsla(236, 100%, 52%, 0.663));
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Cancel_Form_Container {
+    display: flex;
+    width: 80%;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cancel_Form_Container button {
+    margin-bottom: 3.2rem;
+}
+
+.Cancel h1 {
+    width: 80%;
+}
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Satoshi';
+}
+
+.Bankist_Login {
+    width: 40rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+.Bankist_Login input {
+    display: flex;
+    text-align: center;
+    height: 2.3rem;
+    width: 8rem;
+    border: none;
+    font-family: 'Satoshi';
+    font-size: .9rem;
+    color: #000;
+    font-weight: 300;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 1px 2px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.Bankist_Login button {
+    font-family: 'Satoshi';
+    cursor: pointer;
+    width: 6rem;
+    background-color: #0c0b0b;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 20px;
+    height: 2.2rem;
+    margin-top: .1rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.Bankist_Login button:hover {
+    background-color: #0c0b0be6;
+}
+
+@media screen and (max-width: 600px) {
+    .app {
+        max-width: 100%;
+    }
+}

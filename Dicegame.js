@@ -38,6 +38,8 @@ const init = () => {
 
 
 init()
+
+
 const switchPlayer = ()  =>{
   document.getElementById(`current--${activePlayer}`).textContent = 0
     currentScore = 0;

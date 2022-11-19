@@ -180,3 +180,14 @@ img{
 .btn-newgame{
     margin-top: .3rem
 }
+
+.string-Input{
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-family: 'Satoshi';
+}
+.color{
+    position: absolute;
+    top: 50rem;
+}

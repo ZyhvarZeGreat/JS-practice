@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./Dicegame.css" />
     <title>Pig Game</title>
   </head>
-  <body>
+  <input>
     <div class = 'message-container hidden'>
         <p class="message">  </p>
     </div> 
@@ -28,12 +28,14 @@
 
         <div class="button-container">
           <button class="btn btn-newgame">🔁 new game</button>
-
+<button class ='btn btn-poll'> Poll⚡</button>
           <img class="dice-image" src="" />
           <div class="bottom-btn">
             <button class="btn btn-rolldice">🎲 roll dice</button>
             <button class="btn btn-hold">🙋🏾‍♀️ hold</button>
           </div>
+          <input type="number" class="string-Input" value="Input Your Number"></input>
+          <button class=" btn string-checker"> Click Me</button>
         </div>
 
         <section class="player-2 player">
@@ -46,9 +48,18 @@
             <p class="current-label">current</p>
             <h3 class="current-score" id="current--1">0</h3>
           </div>
+          
         </section>
       </div>
+    
+      <h1 class="color"> Change Color</h1>
     </main>
+
+
     <script src="./Dicegame.js"></script>
+    <script src ='./destructArray.js'></script>
+
+
+   
   </body>
 </html>
