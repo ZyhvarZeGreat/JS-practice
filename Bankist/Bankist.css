@@ -23,7 +23,9 @@ main {
 nav {
     height: 7rem;
 }
-
+input{
+    font-family: 'Satoshi';
+}
 .Bankist_Nav_Welcome{
 font-size: 1.2rem;
 font-weight: 600;
@@ -44,7 +46,17 @@ font-weight: 600;
     font-family: 'Satoshi';
 
 }
+.Bankist_Login_Timer{
 
+    width:25rem;
+    text-align: center;
+}
+
+.Bankist_Login_Timer_Item{
+
+    font-family: 'Satoshi';
+    font-weight: 600;
+}
 .Bankist_User_Details {
 
     display: flex;

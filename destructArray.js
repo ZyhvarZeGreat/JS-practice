@@ -371,25 +371,46 @@ const game = {
 
 const numericFunctions = {
   factorial: function factorial(n) {
-    let result = 
-    
-    1;
+    let result = 1;
     for (let i = 2; i <= n; i++) {
-
       result *= i;
-      console.log(`Iteration ${i} ${result}`)
+      console.log(`Iteration ${i} ${result}`);
     }
     // console.log(result);
   },
 
   pow: function pow(m, n) {
-    let result = 1
+    let result = 1;
     for (let i = 0; i <= n; i++) {
-      result = (m *=n) 
+      result = m *= n;
       console.log(result);
     }
   },
 
+  cube: function cube(arr) {
+let cubeValues = []
+    for (const x of arr){
+  cubeValues.push(arr[x]**3)
+}
+let cubeSum
+for (let i of cubeValues){
+  console.log(i)
+  cubeSum = i+=i
+}
+console.log(cubeSum) 
+console.log('----------------break--------')
+
+
+
+
+    // for (let i = 0; i <= arr.length; i++) {
+    //   let cubeValues = [];
+    //   let [cube] = arr[i] ** 3;
+
+    //   cubeValues.fill(arr[i]);
+    //   console.log(cube);
+    // }
+  },
   Euclids: function Euclids(m, n) {
     while (n > 0) {
       let mod = m % n;
@@ -404,10 +425,9 @@ const numericFunctions = {
   },
 };
 
-
-numericFunctions.factorial(20)
-numericFunctions.pow(1,9)
-
+numericFunctions.factorial(20);
+numericFunctions.pow(1, 9);
+numericFunctions.cube([1, 2, 3, 4, 5, 6, 7, 8]);
 // const print = numericFunctions.print(3)
 // console.log(print)
 
@@ -439,15 +459,12 @@ numericFunctions.pow(1,9)
 //     : console.log(`${Math.abs(movement)} was withdrawn from your account`);
 // })
 
-
-
 // const currencies = new Map([
 //   ['NGN', 'Nigerian Naira'],
 //   ['USD', 'United States Dollar'],
 //   ['EUR', 'Euro'],
 //   ['GBP', 'Pound Sterling']
 // ])
-
 
 // currencies.forEach(function(value,key,map){
 // console.log(`${key}:${value}`)
