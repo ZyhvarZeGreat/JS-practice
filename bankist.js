@@ -8,6 +8,27 @@ const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 
+const scrollBtn = document.querySelector('.btn--scroll-to');
+
+const section1 = document.querySelector('#section--1');
+const section2 = document.querySelector('#section--2');
+const section3 = document.querySelector('#section--3');
+
+scrollBtn.addEventListener('click', function(e){
+  const section1Coords = section1.getBoundingClientRect();
+  console.log(section1Coords) 
+  console.log(e.target.getBoundingClientRect());
+  
+window.scrollTo({
+  left: section1Coords.left + window.pageXOffset,
+ top:section1Coords.top + window.pageYOffset,
+ behavior:'smooth'
+ })
+//  section1.scrollIntoView({behavior:'smooth'})
+})
+
+ 
+
 const openModal = function () {
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
